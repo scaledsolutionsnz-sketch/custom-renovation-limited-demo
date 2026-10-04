@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Custom Renovation Limited | Renovations &amp; Carpentry, Stratford</title>
+<meta name="description" content="Renovations, decks, roofing, painting, kitchens and bathrooms around Stratford and Taranaki. Umesh does the job himself, turns up every day and leaves it tidy. Call 022 376 2541.">
+<meta property="og:title" content="Custom Renovation Limited | Renovations &amp; Carpentry, Stratford">
+<meta property="og:description" content="Decks, roofs, painting, kitchens, bathrooms and repairs around Stratford and Taranaki. Rated 5.0 on Google.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --accent:#e2553f;        /* pohutukawa red */
+  --accent-dark:#b93a26;
+  --char:#141a1f;          /* blue-charcoal anchor */
+  --char-2:#1b232a;
+  --char-3:#26303a;
+  --steel:#ece8e1;
+  --ink:#141a1f;
+  --muted:#9fa8b0;
+  --muted-dark:#55606a;
+  --line:rgba(255,255,255,.1);
+  --display:'Teko', Impact, sans-serif;
+  --body:'Rubik', Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:#e4e6e8;background:var(--char);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block;image-orientation:from-image}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;margin:0 0 .45em;font-weight:800;letter-spacing:.01em}
+h2{font-size:clamp(2.4rem,6vw,4.6rem)}
+h3{font-size:1.7rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+section{padding:100px 0;position:relative}
+.band-dark{background:var(--char-2)}
+.band-light{background:var(--steel);color:var(--ink)}
+.band-light .muted{color:var(--muted-dark)}
+.muted{color:var(--muted)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.05rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.band-light .eyebrow{color:#a3301d}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--accent)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:48px}
+.section-head h2{margin:0;max-width:760px}
+.section-head p{max-width:400px;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;font-family:var(--display);font-size:1.2rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;cursor:pointer}
+.btn-primary{background:var(--accent);color:#111}
+.btn-primary:hover{background:#fff;transform:translateY(-2px)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:#111}
+.btn svg{width:20px;height:20px;flex:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.icon{width:26px;height:26px;flex:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:88px;transition:height .3s}
+.nav.scrolled{background:rgba(20,26,31,.96);box-shadow:0 1px 0 var(--line)}
+.nav.scrolled .wrap{height:64px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.04em;line-height:.9;min-width:0}
+.logo svg{width:40px;height:40px;flex:none}
+.logo .lt{display:flex;flex-direction:column;font-size:1.55rem}
+.logo .lt small{font-size:.72rem;letter-spacing:.32em;color:var(--accent);font-weight:700;margin-top:4px}
+.nav-links{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{color:#fff;text-decoration:none;font-family:var(--display);font-weight:600;font-size:1.15rem;letter-spacing:.1em;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .25s}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-call{min-height:46px;padding:8px 18px;font-size:1.1rem}
+.burger{display:none;background:none;border:0;color:#fff;width:46px;height:46px;padding:10px;cursor:pointer}
+@media (max-width:980px){
+  .burger{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--char);padding:8px 20px 24px;border-top:3px solid var(--accent)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav-call .label{display:none}
+}
+@media (max-width:420px){.logo .lt{font-size:1.25rem}.logo .lt small{display:none}.logo svg{width:34px;height:34px}.hero .eyebrow{letter-spacing:.12em}}
+
+/* HERO */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--char);overflow:hidden;padding:140px 0 60px}
+.hero-slides{position:absolute;inset:0}
+.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity 1.6s ease;filter:saturate(.8) contrast(1.08)}
+.hero-slides img.active{opacity:1;animation:kenburns 8s ease-out forwards}
+.hero.paused .hero-slides img.active{animation-play-state:paused}
+@keyframes kenburns{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.14) translate(-1.5%,-1%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,26,31,.86) 0%,rgba(20,26,31,.55) 55%,rgba(20,26,31,.35)),linear-gradient(0deg,rgba(20,26,31,.92),transparent 50%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(3rem,10vw,8.4rem);margin-bottom:22px}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .line span{display:block}
+.hero h1 .hl{color:var(--accent)}
+.js .hero h1 .line span{transform:translateY(105%);animation:lineUp .9s cubic-bezier(.2,.8,.2,1) forwards}
+.js .hero h1 .line:nth-child(2) span{animation-delay:.15s}
+.js .hero h1 .line:nth-child(3) span{animation-delay:.3s}
+@keyframes lineUp{to{transform:translateY(0)}}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.hero p.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:#dde0e2;max-width:560px;margin:0}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.js .hero-fade{opacity:0;animation:fadeIn .8s ease .6s forwards}
+@keyframes fadeIn{to{opacity:1}}
+.rating{display:inline-flex;align-items:center;gap:14px;padding:14px 20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;text-decoration:none}
+.rating .num{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1}
+.stars{color:var(--accent);letter-spacing:2px}
+.rating small{display:block;color:#d3d6d9;font-size:.88rem}
+.hero-controls{display:flex;align-items:center;gap:16px;margin-top:30px}
+.slide-dots{display:flex;gap:8px}
+.slide-dots span{width:40px;height:3px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+.slide-dots span.on::after{content:"";position:absolute;inset:0;background:var(--accent);animation:dot 6s linear forwards;transform-origin:left}
+.hero.paused .slide-dots span.on::after{animation:none;transform:scaleX(1)}
+@keyframes dot{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.pause-btn{width:44px;height:44px;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);color:#fff;cursor:pointer;padding:0}
+.pause-btn:hover{background:var(--accent);color:#111;border-color:var(--accent)}
+.pause-btn svg{width:18px;height:18px}
+
+/* TRUST */
+.trust{padding:0;background:var(--accent);color:#111}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-item{display:flex;gap:14px;align-items:center;padding:26px 24px}
+.trust-item+.trust-item{border-left:2px solid rgba(0,0,0,.15)}
+.trust-item strong{display:block;font-family:var(--display);font-size:1.5rem;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
+.trust-item span{font-size:.96rem;font-weight:500}
+@media (max-width:800px){.trust-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:2px solid rgba(0,0,0,.15)}}
+
+/* SERVICES */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:340px;gap:6px}
+.tile{position:relative;overflow:hidden;color:#fff;text-decoration:none;display:flex;align-items:flex-end;background:var(--char-3)}
+.tile.wide{grid-column:span 2}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.08);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,26,31,.94) 0%,rgba(20,26,31,.4) 55%,rgba(20,26,31,.15))}
+.tile:hover img{transform:scale(1.08)}
+.tile-body{position:relative;z-index:2;padding:28px}
+.tile .num{font-family:var(--display);font-weight:700;color:var(--accent);letter-spacing:.15em;font-size:1.05rem;text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.tile h3{font-size:2.15rem;margin:4px 0 6px}
+.tile p{margin:0;color:#d6d9dc;max-width:440px;font-size:.98rem}
+.stock-note{margin-top:18px;font-size:.85rem}
+@media (max-width:900px){.tiles{grid-template-columns:1fr 1fr;grid-auto-rows:300px}.tile.wide{grid-column:span 2}}
+@media (max-width:600px){.tiles{grid-template-columns:1fr;grid-auto-rows:280px}.tile.wide{grid-column:auto}}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.85) contrast(1.06)}
+.corner-tag{position:absolute;left:-1px;bottom:-1px;background:var(--accent);color:#111;padding:16px 20px;font-family:var(--display);font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em;line-height:1.1}
+.checklist{list-style:none;padding:0;margin:26px 0 0}
+.checklist li{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.12);font-weight:600;font-size:1.05rem}
+.checklist .icon{color:#fff;background:var(--ink);padding:4px;width:28px;height:28px}
+.job-list{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.job-list li{font-size:.9rem;font-weight:600;padding:6px 12px;border:1px solid rgba(0,0,0,.2)}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}.about-img img{aspect-ratio:4/3;object-position:center 70%}}
+
+/* PARALLAX */
+.parallax{padding:0;height:540px;overflow:hidden;display:flex;align-items:center;color:#fff}
+.parallax .bg{position:absolute;left:0;right:0;top:-20%;height:140%;background:url('img/sawing-1920.webp') center/cover no-repeat;filter:saturate(.7) contrast(1.1);will-change:transform}
+.parallax::after{content:"";position:absolute;inset:0;background:rgba(20,26,31,.66)}
+.parallax .wrap{position:relative;z-index:2;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.stat .n{font-family:var(--display);font-weight:800;font-size:clamp(3.6rem,9vw,7rem);line-height:.9;color:#fff}
+.stat .n em{font-style:normal;color:var(--accent)}
+.stat p{font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:1.15rem;color:#ddd;margin:8px 0 0}
+@media (max-width:700px){.parallax{height:auto;padding:90px 0}.stats{grid-template-columns:1fr;gap:34px}}
+
+/* TEAM */
+.owner{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;background:#fff;padding:44px 40px;border-top:4px solid var(--accent)}
+.avatar{width:110px;height:110px;background:var(--char);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:3rem;font-weight:800;box-shadow:8px 8px 0 var(--accent)}
+.owner h3{color:var(--ink);font-size:2.2rem;margin-bottom:4px}
+.owner .role{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;color:#a3301d;font-weight:700;margin-bottom:12px;display:block}
+.owner p{margin:0;color:var(--muted-dark);max-width:720px}
+@media (max-width:640px){.owner{grid-template-columns:1fr;padding:34px 24px;gap:24px}}
+
+/* REVIEWS */
+.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.review{background:var(--char-3);padding:34px 30px;display:flex;flex-direction:column;gap:14px;position:relative}
+.review::before{content:"\201C";position:absolute;right:24px;top:0;font-family:var(--display);font-size:7rem;line-height:1;color:var(--accent);opacity:.25}
+.review p{margin:0;flex:1;font-size:1.05rem}
+.review footer{font-size:.92rem;color:var(--muted)}
+.review footer strong{color:#fff;display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:1.15rem}
+.center{margin-top:36px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.center small{color:var(--muted)}
+@media (max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+
+/* LEAVE A REVIEW */
+.review-banner{background:var(--accent);color:#111;padding:60px 0}
+.review-banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.review-banner h2{margin:0;font-size:clamp(2rem,5vw,3.4rem)}
+.review-banner p{margin:6px 0 0;font-weight:500}
+.review-banner .btn{background:#111;color:#fff}
+.review-banner .btn:hover{background:#fff;color:#111}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}
+.faq-list details{border-bottom:1px solid rgba(0,0,0,.15)}
+.faq-list details:first-child{border-top:1px solid rgba(0,0,0,.15)}
+.faq-list summary{list-style:none;cursor:pointer;padding:22px 50px 22px 0;font-family:var(--display);font-size:1.5rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;position:relative;min-height:44px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;border-right:3px solid var(--accent-dark);border-bottom:3px solid var(--accent-dark);transform:translateY(-70%) rotate(45deg);transition:transform .3s}
+.faq-list details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq-list details p{padding:0 0 22px;margin:0;color:var(--muted-dark)}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:20px}}
+
+/* CONTACT */
+.contact{background:var(--char)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-rows{list-style:none;padding:0;margin:28px 0}
+.contact-rows li{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.contact-rows .icon{color:var(--accent)}
+.contact-rows a{color:#fff;text-decoration:none;overflow-wrap:anywhere}
+.contact-rows span{overflow-wrap:anywhere;min-width:0}
+.contact-actions{display:flex;flex-direction:column;gap:10px}
+.contact-actions .btn{min-height:96px;font-size:1.6rem;justify-content:space-between;padding:20px 30px}
+.contact-actions .btn svg{width:30px;height:30px}
+.socials{display:flex;gap:8px}
+.socials a{width:46px;height:46px;display:grid;place-items:center;background:var(--char-3);color:#fff;transition:background .2s,color .2s}
+.socials a:hover{background:var(--accent);color:#111}
+.socials svg{width:20px;height:20px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:40px}.contact-actions .btn{min-height:80px;font-size:1.3rem}}
+
+/* MAP */
+.map{padding:0;background:var(--char)}
+.map iframe{width:100%;height:440px;border:0;display:block;filter:grayscale(.6) contrast(1.05)}
+
+/* FOOTER */
+.footer{background:#0d1114;color:#8b9399;padding:40px 0;font-size:.95rem;border-top:3px solid var(--accent)}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:center}
+.footer a{color:#cfd3d6;text-decoration:none}
+.footer a:hover{color:var(--accent)}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+
+/* REVEALS */
+.js .reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .wipe>img{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s cubic-bezier(.77,0,.18,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .wipe-up>img{clip-path:inset(100% 0 0 0);transition:clip-path 1s cubic-bezier(.77,0,.18,1),transform .7s ease}
+.js .wipe.in>img,.js .wipe-up.in>img{clip-path:inset(0 0 0 0)}
+
+@media (max-width:600px){section{padding:70px 0}.map iframe{height:320px}.section-head{margin-bottom:34px}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .js .wipe>img,.js .wipe-up>img{clip-path:none}
+  .js .hero h1 .line span{transform:none}
+  .js .hero-fade{opacity:1}
+  .hero-slides img.active{transform:none}
+  .parallax .bg{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-hammer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.4 8.4a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 15 22 10.6M20.9 11.7 12.3 3.1a1 1 0 0 0-1.4 0L9 5l8 8 1.9-1.9"/></symbol>
+  <symbol id="i-broom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 3 11 11"/><path d="M5.5 13.5c1.8-1.8 5-1.5 7 .5s2.3 5.2.5 7c-2 0-6-1-8.5-3.5S3.5 15.5 5.5 13.5z"/><path d="m8 17 2-2"/></symbol>
+  <symbol id="i-pin2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V12h2.8v10H14V12h2.8l.4-3.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.6 1.5V6.7a4.7 4.7 0 0 1-4.6-4.7z"/></symbol>
+</svg>
+
+<!-- 1. NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Custom Renovation Limited home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#e2553f"/><path d="M12 30 32 13l20 17" fill="none" stroke="#141a1f" stroke-width="5"/><path d="M18 27v23h28V27" fill="none" stroke="#141a1f" stroke-width="5"/><path d="M27 50V38h10v12" fill="none" stroke="#141a1f" stroke-width="4"/></svg>
+      <span class="lt">Custom Renovation<small>Stratford · Taranaki</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-call" href="tel:+64223762541" aria-label="Call 022 376 2541"><svg class="icon"><use href="#i-phone"/></svg><span class="label">022 376 2541</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 2. HERO -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero-slides" id="heroSlides">
+    <img class="active" src="img/hero-carp1-1920.webp" srcset="img/hero-carp1-1080.webp 1080w, img/hero-carp1-1920.webp 1920w, img/hero-carp1-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" fetchpriority="high">
+    <img src="img/hero-roof-1920.webp" srcset="img/hero-roof-1080.webp 1080w, img/hero-roof-1920.webp 1920w, img/hero-roof-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1272" loading="lazy">
+    <img src="img/hero-kitchenreno-1920.webp" srcset="img/hero-kitchenreno-1080.webp 1080w, img/hero-kitchenreno-1920.webp 1920w, img/hero-kitchenreno-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" loading="lazy">
+  </div>
+  <div class="wrap">
+    <span class="eyebrow hero-fade">Stratford · Central Taranaki</span>
+    <h1>
+      <span class="line"><span>Renos, roofs</span></span>
+      <span class="line"><span>and repairs</span></span>
+      <span class="line"><span class="hl">around Stratford.</span></span>
+    </h1>
+    <div class="hero-bottom hero-fade">
+      <div>
+        <p class="lead">Decks, roofing, painting, kitchens, bathrooms and the odd jobs nobody else will touch. One builder who turns up every day and leaves the place tidy.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+64223762541"><svg class="icon"><use href="#i-phone"/></svg>Call 022 376 2541</a>
+          <a class="btn btn-ghost" href="#contact">Get a quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <a class="rating" href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener" aria-label="Rated 5.0 out of 5 on Google. Opens Google reviews">
+        <span class="num">5.0</span>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><small>Rated 5 stars on Google</small></div>
+      </a>
+    </div>
+    <div class="hero-controls hero-fade">
+      <button class="pause-btn" id="pauseBtn" type="button" aria-pressed="false" aria-label="Pause slideshow"><svg id="pauseIcon"><use href="#i-pause"/></svg></button>
+      <div class="slide-dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TRUST STRIP -->
+<section class="trust" aria-label="Why choose us">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><svg class="icon"><use href="#i-pin2"/></svg><div><strong>Stratford local</strong><span>Based on Pembroke Road, working around Taranaki.</span></div></div>
+    <div class="trust-item"><svg class="icon"><use href="#i-hammer"/></svg><div><strong>Turns up every day</strong><span>Your job gets finished, not left half done.</span></div></div>
+    <div class="trust-item"><svg class="icon"><use href="#i-broom"/></svg><div><strong>Tidy and upfront</strong><span>Honest advice, a fair price, a clean site.</span></div></div>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section id="services" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">What we do</span><h2 class="reveal">Inside, outside and up on the roof</h2></div>
+      <p class="muted reveal">These are the jobs Stratford customers have hired Umesh for, straight from his Google reviews.</p>
+    </div>
+    <div class="tiles">
+      <a href="#contact" class="tile wide wipe"><img src="img/deck-1920.webp" srcset="img/deck-1080.webp 1080w, img/deck-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Timber deck framing going in" width="1079" height="1920" loading="lazy" style="object-position:center 60%"><div class="tile-body"><span class="num">01</span><h3>Decks &amp; outdoor</h3><p>New decks and steps, deck roofs, ranch sliders and retaining walls.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/roofpaint-1920.webp" srcset="img/roofpaint-1080.webp 1080w, img/roofpaint-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Working up on a house roof" width="1303" height="1920" loading="lazy"><div class="tile-body"><span class="num">02</span><h3>Roofing</h3><p>Garage and deck roofs replaced, old Clearlite swapped out, roofs painted.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/roller-1920.webp" srcset="img/roller-1080.webp 1080w, img/roller-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Paint roller and tray" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">03</span><h3>Painting</h3><p>Exterior and interior painting, weatherboard repairs and varnishing.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/kitchen2-1920.webp" srcset="img/kitchen2-1080.webp 1080w, img/kitchen2-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Renovated kitchen with white cabinets" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">04</span><h3>Kitchens &amp; benchtops</h3><p>New kitchens, concrete benchtops, and tired Rimu benchtops brought back to life.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/bathroom-1920.webp" srcset="img/bathroom-1080.webp 1080w, img/bathroom-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Renovated bathroom with walk-in shower" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">05</span><h3>Bathrooms &amp; showers</h3><p>Bathroom makeovers and shower work, start to finish.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/carp2-1920.webp" srcset="img/carp2-1080.webp 1080w, img/carp2-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Builder with tool belt on site" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">06</span><h3>Repairs &amp; odd jobs</h3><p>Plastering, skirting, vinyl and carpet laying, flat pack assembly.</p></div></a>
+    </div>
+    <p class="muted stock-note reveal">Service photos are stock images for this demo. Umesh's own job photos would go here.</p>
+  </div>
+</section>
+
+<!-- 5. ABOUT -->
+<section id="about" class="band-light">
+  <div class="wrap about-grid">
+    <div class="about-img wipe-up">
+      <img src="img/deck-real-1920.webp" srcset="img/deck-real-1080.webp 810w, img/deck-real-1920.webp 1440w" sizes="(max-width:860px) 100vw, 45vw" alt="New timber deck and steps with lattice screen built by Custom Renovation Limited" width="1440" height="1920" loading="lazy">
+      <div class="corner-tag">A recent<br>Stratford deck</div>
+    </div>
+    <div>
+      <span class="eyebrow reveal">About us</span>
+      <h2 class="reveal">One builder who can turn his hand to anything</h2>
+      <p class="muted reveal">Custom Renovation Limited is Umesh, a Stratford-based carpenter and all-round renovator. One week it's a new deck, the next it's a roof, a kitchen or a full repaint. You deal with the person doing the work from the first chat to the last clean-up.</p>
+      <p class="muted reveal">His customers say the same things over and over: he turns up every day, gives honest advice, doesn't muck around and takes pride in a tidy job.</p>
+      <ul class="checklist reveal">
+        <li><svg class="icon"><use href="#i-check"/></svg>Locally owned, based in Stratford</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>You deal with Umesh directly</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Honest advice and a fair price</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STATS -->
+<section class="parallax" aria-label="By the numbers">
+  <div class="bg" id="parallaxBg"></div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="n">5.0<em>★</em></div><p>Google rating</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="20">20</span><em>+</em></div><p>Types of job in his reviews</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="1">1</span></div><p>Person to deal with</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. TEAM -->
+<section id="team" class="band-light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Who you'll deal with</span><h2 class="reveal">The man on the tools</h2></div>
+    </div>
+    <div class="owner reveal">
+      <div class="avatar" aria-hidden="true">U</div>
+      <div>
+        <h3>Umesh</h3>
+        <span class="role">Owner / builder</span>
+        <p>Umesh quotes the job, does the work and cleans up after. Carpentry, roofing, painting, plastering, flooring and kitchens are all in a day's work, so you don't need to juggle three different trades for one reno.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. REVIEWS -->
+<section id="reviews" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Google reviews</span><h2 class="reveal">What Stratford customers say</h2></div>
+      <p class="muted reveal">Real reviews from the Custom Renovation Limited Google listing, rated 5.0 stars.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Excellent workmanship, communication and price. Painted roof, interior painting, refurbished Rimu bench tops, replaced deck roof and gave great honest advice. Completed job in a great time frame, turned up every day, no mucking around. Highly recommended."</p><footer><strong>HeARTfelt Bernice</strong>Google review</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Umesh has built us a retaining wall and replaced our garage roof and also painted our house and garage roofs. He has a great work ethic and his workmanship is second to none. I highly recommend him for any job he undertakes and give him 5 stars."</p><footer><strong>Vicki Nicol</strong>Google review</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Very Highly Recommended. Did a great job and didn't muck us around. Very reasonable price. Painted the roof. Replaced an old Clearlite roof with a new one. Did weatherboard repairs and exterior painting ... They just know what they're doing, are good at it and it doesn't take forever to get the job done."</p><footer><strong>Ian Mitchell</strong>Google review</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Great experience with this painter and all round home handyman. Solid work on plastering, skirting, and interior painting ... Umesh is reliable and easy to work with, I highly recommend him for a straightforward, positive experience."</p><footer><strong>John H</strong>Google review</footer></article>
+    </div>
+    <div class="center reveal"><a class="btn btn-ghost" href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener">See all our Google reviews <svg class="icon"><use href="#i-arrow"/></svg></a><small>Excerpts marked with ... are shortened.</small></div>
+  </div>
+</section>
+
+<!-- 8. LEAVE A REVIEW -->
+<section class="review-banner" aria-label="Leave a review">
+  <div class="wrap">
+    <div><h2>Happy with our work? Leave us a review</h2><p>It helps other Taranaki homeowners find a builder they can trust.</p></div>
+    <a class="btn" href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener">Review us on Google</a>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq" class="band-light">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow reveal">FAQ</span><h2 class="reveal">Before you call</h2><p class="muted reveal">Anything else, just ring Umesh on 022 376 2541.</p></div>
+    <div class="faq-list reveal">
+      <details><summary>What areas do you work in?</summary><p>Custom Renovation Limited is based on Pembroke Road in Stratford and works around Taranaki. If your job is further afield, give Umesh a call and ask.</p></details>
+      <details><summary>Can you do more than one thing on the same job?</summary><p>Yes, and that's the point. Customers regularly have the roof painted, the deck roof replaced and the inside repainted in one go, so there's one person to organise instead of several trades.</p></details>
+      <details><summary>How do I get a quote?</summary><p>Call or email with your address, what you'd like done and a few photos if you have them. Umesh will talk it through and arrange to have a look.</p></details>
+      <details><summary>Do you take on small jobs?</summary><p>Reviews include everything from a full kitchen to skirting, plastering and flat pack assembly. If you're not sure whether your job is worth a call, ask anyway.</p></details>
+      <details><summary>What happens once I say yes?</summary><p>You'll agree a start date with Umesh, he'll keep you in the loop as the work goes, and the site gets cleaned up when it's done. Ask about timing and anything else you need to know when you call.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="reveal">Got a job around the house?</h2>
+      <p class="muted reveal">Call Umesh for a quote, or email the details and a few photos.</p>
+      <ul class="contact-rows reveal">
+        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+64223762541">022 376 2541</a></li>
+        <li><svg class="icon"><use href="#i-mail"/></svg><span id="emailText">Email Umesh using the button</span></li>
+        <li><svg class="icon"><use href="#i-pin"/></svg><span>Pembroke Road, Stratford 4332</span></li>
+      </ul>
+      <div class="socials reveal">
+        <a href="https://www.facebook.com/search/top?q=Custom%20Renovation%20Limited%20Stratford" target="_blank" rel="noopener" aria-label="Search Facebook for Custom Renovation Limited"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=custom%20renovation%20taranaki" target="_blank" rel="noopener" aria-label="Search Instagram for Custom Renovation Taranaki"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=Custom%20Renovation%20Limited%20Stratford" target="_blank" rel="noopener" aria-label="Search TikTok for Custom Renovation Limited"><svg><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn-primary reveal" href="tel:+64223762541">Call for a quote <svg class="icon"><use href="#i-phone"/></svg></a>
+      <a class="btn btn-ghost reveal" href="#" data-gmail data-user="customrenovationtaranaki" data-domain="gmail.com" data-su="Renovation%20enquiry" data-body="Hi%20Umesh%2C%0A%0AI'd%20like%20a%20quote%20for%3A%0A%0AAddress%3A%0A%0AThanks">Email us about your job <svg class="icon"><use href="#i-mail"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11. MAP -->
+<section class="map" aria-label="Map">
+  <iframe title="Map to Custom Renovation Limited, Pembroke Road, Stratford" src="https://www.google.com/maps?q=Custom+Renovation+Limited,+Pembroke+Road,+Stratford+4332&ll=-39.3330359,174.2821298&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+</main>
+
+<!-- 12. FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Custom Renovation Limited · Stratford, Taranaki</span>
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener">Leave a review</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/search/top?q=Custom%20Renovation%20Limited%20Stratford" target="_blank" rel="noopener" aria-label="Search Facebook for Custom Renovation Limited"><svg><use href="#i-fb"/></svg></a>
+      <a href="https://www.instagram.com/explore/search/keyword/?q=custom%20renovation%20taranaki" target="_blank" rel="noopener" aria-label="Search Instagram for Custom Renovation Taranaki"><svg><use href="#i-ig"/></svg></a>
+      <a href="https://www.tiktok.com/search?q=Custom%20Renovation%20Limited%20Stratford" target="_blank" rel="noopener" aria-label="Search TikTok for Custom Renovation Limited"><svg><use href="#i-tt"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+var burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');});
+links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu');});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&links.classList.contains('open')){links.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.focus();}});
+
+var nav=document.getElementById('nav'),pbg=document.getElementById('parallaxBg'),ticking=false;
+function onScroll(){
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  if(!reduce&&pbg){var r=pbg.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){pbg.style.transform='translate3d(0,'+((r.top-innerHeight/2)*-0.18)+'px,0)';}}
+  ticking=false;
+}
+window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(onScroll);ticking=true;}},{passive:true});
+onScroll();
+
+// Hero slideshow with pause/play (starts paused under reduced motion)
+var hero=document.getElementById('hero'),slides=document.querySelectorAll('#heroSlides img'),dots=document.querySelectorAll('#dots span'),cur=0,timer=null;
+var pauseBtn=document.getElementById('pauseBtn'),pauseIcon=document.getElementById('pauseIcon').querySelector('use');
+function next(){
+  slides[cur].classList.remove('active');dots[cur].classList.remove('on');
+  cur=(cur+1)%slides.length;
+  void slides[cur].offsetWidth;
+  slides[cur].classList.add('active');dots[cur].classList.add('on');
+}
+function play(){if(timer||slides.length<2)return;timer=setInterval(next,6000);hero.classList.remove('paused');pauseBtn.setAttribute('aria-pressed','false');pauseBtn.setAttribute('aria-label','Pause slideshow');pauseIcon.setAttribute('href','#i-pause');}
+function pause(){clearInterval(timer);timer=null;hero.classList.add('paused');pauseBtn.setAttribute('aria-pressed','true');pauseBtn.setAttribute('aria-label','Play slideshow');pauseIcon.setAttribute('href','#i-play');}
+pauseBtn.addEventListener('click',function(){timer?pause():play();});
+if(reduce){pause();}else{play();}
+
+function countUp(el){
+  var end=+el.getAttribute('data-count');
+  if(reduce||end<5){el.textContent=end;return;}
+  var t0=null;
+  function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+}
+
+var targets=document.querySelectorAll('.reveal,.wipe,.wipe-up');
+if('IntersectionObserver' in window&&!reduce){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,sibs=Array.prototype.filter.call(el.parentElement.children,function(c){return c.matches('.reveal,.wipe,.wipe-up');});
+      var d=(Math.max(0,sibs.indexOf(el))*0.1)+'s',img=el.querySelector(':scope>img');
+      if(img){img.style.transitionDelay=d+',0s';img.addEventListener('transitionend',function(){img.style.transitionDelay='';},{once:true});}
+      else{el.style.transitionDelay=d;}
+      el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(countUp);
+      io.unobserve(el);
+    });
+  },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  targets.forEach(function(el){io.observe(el);});
+}else{
+  targets.forEach(function(el){el.classList.add('in');});
+}
+
+document.querySelectorAll('a[data-gmail]').forEach(function(a){var to=a.getAttribute('data-user')+'@'+a.getAttribute('data-domain');a.href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to)+'&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');a.target='_blank';a.rel='noopener';});
+var et=document.getElementById('emailText');if(et)et.innerHTML='customrenovationtaranaki<wbr>'+'@'+'gmail.com';
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
