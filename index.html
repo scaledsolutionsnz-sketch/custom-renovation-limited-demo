@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Custom Renovation Limited | Renovations &amp; Carpentry, Stratford</title>
-<meta name="description" content="Renovations, decks, roofing, painting, kitchens and bathrooms around Stratford and Taranaki. Umesh does the job himself, turns up every day and leaves it tidy. Call 022 376 2541.">
+<meta name="description" content="Renovations, decks, roofing, painting, kitchens and bathrooms around Stratford and Taranaki. Umesh turns up every day and leaves it tidy. Call 022 376 2541.">
 <meta property="og:title" content="Custom Renovation Limited | Renovations &amp; Carpentry, Stratford">
 <meta property="og:description" content="Decks, roofs, painting, kitchens, bathrooms and repairs around Stratford and Taranaki. Rated 5.0 on Google.">
 <meta property="og:image" content="https://custom-renovation-limited-demo.vercel.app/og.jpg">
@@ -254,6 +254,24 @@ section{padding:100px 0;position:relative}
   .hero-slides img.active{transform:none}
   .parallax .bg{transform:none!important}
 }
+
+.band-bone{background:#f9f6f1;color:var(--ink)}
+/* Recent jobs: masonry, every photo at its natural shape */
+.jobs-grid{column-count:3;column-gap:8px}
+.jobs-grid figure{margin:0 0 8px;break-inside:avoid;position:relative;background:var(--char)}
+.jobs-grid img{display:block;width:100%;height:auto;filter:saturate(.85) contrast(1.06)}
+.jobs-grid figcaption{position:absolute;left:0;bottom:0;background:var(--accent);color:#111;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:1rem;padding:6px 12px}
+@media (max-width:980px){.jobs-grid{column-count:2}}
+@media (max-width:600px){.jobs-grid{column-count:1}}
+
+.jobs-more{display:flex;flex-direction:column;justify-content:center;gap:10px;aspect-ratio:12/7;margin:0 0 8px;break-inside:avoid;background:var(--char);color:#fff;padding:24px 28px;text-decoration:none;font-family:var(--display);text-transform:uppercase;letter-spacing:.04em}
+.jobs-more strong{font-size:clamp(1.4rem,2.2vw,2rem);line-height:1.05}
+.jobs-more span{color:var(--accent);font-weight:700;font-size:1.15rem;letter-spacing:.06em}
+.band-bone .muted{color:var(--muted-dark)}.band-bone .eyebrow{color:#a3301d}
+.logo{min-height:44px}
+.contact-rows a{padding:9px 0;margin:-9px 0}
+.footer-links a{padding:10px 0;margin:-10px 0;min-width:44px}
+@media (max-width:600px){.hero{padding:100px 0 36px}.hero h1{margin-bottom:14px}.hero .btn{line-height:1.1}.hero-ctas{margin-top:16px;gap:10px}.hero-bottom{gap:16px}.hero .lead-more{display:none}.hero p.lead{text-wrap:pretty}}
 </style>
 </head>
 <body>
@@ -283,6 +301,7 @@ section{padding:100px 0;position:relative}
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
+      <li><a href="#jobs">Recent jobs</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -302,9 +321,8 @@ section{padding:100px 0;position:relative}
 <!-- 2. HERO -->
 <section class="hero" id="hero" aria-label="Introduction">
   <div class="hero-slides" id="heroSlides">
-    <img class="active" src="img/hero-carp1-1920.webp" srcset="img/hero-carp1-1080.webp 1080w, img/hero-carp1-1920.webp 1920w, img/hero-carp1-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" fetchpriority="high">
-    <img src="img/hero-roof-1920.webp" srcset="img/hero-roof-1080.webp 1080w, img/hero-roof-1920.webp 1920w, img/hero-roof-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1272" loading="lazy">
-    <img src="img/hero-kitchenreno-1920.webp" srcset="img/hero-kitchenreno-1080.webp 1080w, img/hero-kitchenreno-1920.webp 1920w, img/hero-kitchenreno-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" loading="lazy">
+    <img class="active" src="img/hero-kitchen-1920.webp" srcset="img/hero-kitchen-1080.webp 1080w, img/hero-kitchen-1920.webp 1920w, img/hero-kitchen-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1440" fetchpriority="high">
+    <img src="img/hero-deck-1920.webp" srcset="img/hero-deck-1080.webp 810w, img/hero-deck-1920.webp 1440w, img/hero-deck-3840.webp 2880w" sizes="100vw" alt="" width="1440" height="1920" loading="lazy" style="object-position:center 45%">
   </div>
   <div class="wrap">
     <span class="eyebrow hero-fade">Stratford · Central Taranaki</span>
@@ -315,20 +333,20 @@ section{padding:100px 0;position:relative}
     </h1>
     <div class="hero-bottom hero-fade">
       <div>
-        <p class="lead">Decks, roofing, painting, kitchens, bathrooms and the odd jobs nobody else will touch. One builder who turns up every day and leaves the place tidy.</p>
+        <p class="lead">Decks, roofing, painting, kitchens, bathrooms and odd jobs around the house.<span class="lead-more"> Umesh turns up every day and leaves the place tidy.</span></p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="tel:+64223762541"><svg class="icon"><use href="#i-phone"/></svg>Call 022 376 2541</a>
           <a class="btn btn-ghost" href="#contact">Get a quote <svg class="icon"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
-      <a class="rating" href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener" aria-label="Rated 5.0 out of 5 on Google. Opens Google reviews">
+      <a class="rating" href="https://search.google.com/local/reviews?placeid=ChIJg3way4gHFW0R9K-MMTLPQ6g" target="_blank" rel="noopener" aria-label="Rated 5.0 out of 5 from 7 Google reviews. Opens Google reviews">
         <span class="num">5.0</span>
-        <div><span class="stars" aria-hidden="true">★★★★★</span><small>Rated 5 stars on Google</small></div>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><small>From 7 Google reviews</small></div>
       </a>
     </div>
     <div class="hero-controls hero-fade">
       <button class="pause-btn" id="pauseBtn" type="button" aria-pressed="false" aria-label="Pause slideshow"><svg id="pauseIcon"><use href="#i-pause"/></svg></button>
-      <div class="slide-dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+      <div class="slide-dots" id="dots" aria-hidden="true"><span class="on"></span><span></span></div>
     </div>
   </div>
 </section>
@@ -347,32 +365,34 @@ section{padding:100px 0;position:relative}
   <div class="wrap">
     <div class="section-head">
       <div><span class="eyebrow reveal">What we do</span><h2 class="reveal">Inside, outside and up on the roof</h2></div>
-      <p class="muted reveal">These are the jobs Stratford customers have hired Umesh for, straight from his Google reviews.</p>
+      <p class="muted reveal">These are the jobs customers have hired Umesh for, straight from his Google reviews.</p>
     </div>
     <div class="tiles">
-      <a href="#contact" class="tile wide wipe"><img src="img/deck-1920.webp" srcset="img/deck-1080.webp 1080w, img/deck-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Timber deck framing going in" width="1079" height="1920" loading="lazy" style="object-position:center 60%"><div class="tile-body"><span class="num">01</span><h3>Decks &amp; outdoor</h3><p>New decks and steps, deck roofs, ranch sliders and retaining walls.</p></div></a>
-      <a href="#contact" class="tile wipe"><img src="img/roofpaint-1920.webp" srcset="img/roofpaint-1080.webp 1080w, img/roofpaint-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Working up on a house roof" width="1303" height="1920" loading="lazy"><div class="tile-body"><span class="num">02</span><h3>Roofing</h3><p>Garage and deck roofs replaced, old Clearlite swapped out, roofs painted.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/job-deck-1920.webp" srcset="img/job-deck-1080.webp 810w, img/job-deck-1920.webp 1440w" sizes="(max-width:600px) 100vw, 66vw" alt="New timber deck and steps with a lattice screen, from the Custom Renovation Google listing" width="1440" height="1920" loading="lazy" style="object-position:center 72%"><div class="tile-body"><span class="num">01</span><h3>Decks &amp; outdoor</h3><p>New decks and steps, deck roofs, ranch sliders and retaining walls.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/roofing-1920.webp" srcset="img/roofing-1080.webp 1080w, img/roofing-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Ribbed metal roof against a stormy sky (stock photo)" width="1920" height="1282" loading="lazy"><div class="tile-body"><span class="num">02</span><h3>Roofing</h3><p>Garage and deck roofs replaced, old Clearlite swapped out, roofs painted.</p></div></a>
       <a href="#contact" class="tile wipe"><img src="img/roller-1920.webp" srcset="img/roller-1080.webp 1080w, img/roller-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Paint roller and tray" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">03</span><h3>Painting</h3><p>Exterior and interior painting, weatherboard repairs and varnishing.</p></div></a>
-      <a href="#contact" class="tile wide wipe"><img src="img/kitchen2-1920.webp" srcset="img/kitchen2-1080.webp 1080w, img/kitchen2-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Renovated kitchen with white cabinets" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">04</span><h3>Kitchens &amp; benchtops</h3><p>New kitchens, concrete benchtops, and tired Rimu benchtops brought back to life.</p></div></a>
-      <a href="#contact" class="tile wide wipe"><img src="img/bathroom-1920.webp" srcset="img/bathroom-1080.webp 1080w, img/bathroom-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Renovated bathroom with walk-in shower" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">05</span><h3>Bathrooms &amp; showers</h3><p>Bathroom makeovers and shower work, start to finish.</p></div></a>
-      <a href="#contact" class="tile wipe"><img src="img/carp2-1920.webp" srcset="img/carp2-1080.webp 1080w, img/carp2-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Builder with tool belt on site" width="1920" height="1280" loading="lazy"><div class="tile-body"><span class="num">06</span><h3>Repairs &amp; odd jobs</h3><p>Plastering, skirting, vinyl and carpet laying, flat pack assembly.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/hero-kitchen-1920.webp" srcset="img/hero-kitchen-1080.webp 1080w, img/hero-kitchen-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Kitchen with a timber benchtop and white cabinets, from the Custom Renovation Google listing" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">04</span><h3>Kitchens &amp; benchtops</h3><p>New kitchens, concrete benchtops, and tired Rimu benchtops brought back to life.</p></div></a>
+      <a href="#contact" class="tile wide wipe"><img src="img/job-shower-1920.webp" srcset="img/job-shower-1080.webp 810w, img/job-shower-1920.webp 1440w" sizes="(max-width:600px) 100vw, 66vw" alt="Glass shower enclosure, from a customer photo on the Custom Renovation Google listing" width="1440" height="1920" loading="lazy" style="object-position:center 40%"><div class="tile-body"><span class="num">05</span><h3>Bathrooms &amp; showers</h3><p>Bathroom makeovers and shower work, start to finish.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/wardrobe-crop-1920.webp" srcset="img/wardrobe-crop-1080.webp 810w, img/wardrobe-crop-1920.webp 1440w" sizes="(max-width:600px) 100vw, 33vw" alt="Built-in wardrobe with shelves, drawers and a hanging rail, from the Custom Renovation Google listing" width="1440" height="1560" loading="lazy" style="object-position:center 45%"><div class="tile-body"><span class="num">06</span><h3>Repairs &amp; odd jobs</h3><p>Plastering, skirting, vinyl and carpet laying, flat pack assembly.</p></div></a>
     </div>
-    <p class="muted stock-note reveal">Service photos are stock images for this demo. Umesh's own job photos would go here.</p>
+    <p class="muted stock-note reveal">Deck, kitchen, shower and wardrobe photos are from the Custom Renovation Google listing. The roofing and painting photos are stock.</p>
   </div>
 </section>
+
+
 
 <!-- 5. ABOUT -->
 <section id="about" class="band-light">
   <div class="wrap about-grid">
     <div class="about-img wipe-up">
-      <img src="img/deck-real-1920.webp" srcset="img/deck-real-1080.webp 810w, img/deck-real-1920.webp 1440w" sizes="(max-width:860px) 100vw, 45vw" alt="New timber deck and steps with lattice screen built by Custom Renovation Limited" width="1440" height="1920" loading="lazy">
-      <div class="corner-tag">A recent<br>Stratford deck</div>
+      <img src="img/wardrobe-crop-1920.webp" srcset="img/wardrobe-crop-1080.webp 810w, img/wardrobe-crop-1920.webp 1440w" sizes="(max-width:860px) 100vw, 45vw" alt="Built-in wardrobe with shelves, drawers and a hanging rail, posted by Custom Renovation Limited" width="1440" height="1560" loading="lazy" style="object-position:center 40%">
+      <div class="corner-tag">Built-in<br>wardrobe</div>
     </div>
     <div>
       <span class="eyebrow reveal">About us</span>
-      <h2 class="reveal">One builder who can turn his hand to anything</h2>
-      <p class="muted reveal">Custom Renovation Limited is Umesh, a Stratford-based carpenter and all-round renovator. One week it's a new deck, the next it's a roof, a kitchen or a full repaint. You deal with the person doing the work from the first chat to the last clean-up.</p>
-      <p class="muted reveal">His customers say the same things over and over: he turns up every day, gives honest advice, doesn't muck around and takes pride in a tidy job.</p>
+      <h2 class="reveal">A carpenter who can turn his hand to anything</h2>
+      <p class="muted reveal">Custom Renovation Limited is run by Umesh, a Stratford-based carpenter and all-round renovator. One week it's a new deck, the next it's a roof, a kitchen or a full repaint. You deal with Umesh from the first chat to the last clean-up.</p>
+      <p class="muted reveal">His Google reviews mention that he turns up every day, gives honest advice, doesn't muck around and takes pride in a tidy job.</p>
       <ul class="checklist reveal">
         <li><svg class="icon"><use href="#i-check"/></svg>Locally owned, based in Stratford</li>
         <li><svg class="icon"><use href="#i-check"/></svg>You deal with Umesh directly</li>
@@ -388,8 +408,8 @@ section{padding:100px 0;position:relative}
   <div class="wrap">
     <div class="stats">
       <div class="stat reveal"><div class="n">5.0<em>★</em></div><p>Google rating</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="7">7</span></div><p>Five-star Google reviews</p></div>
       <div class="stat reveal"><div class="n"><span data-count="20">20</span><em>+</em></div><p>Types of job in his reviews</p></div>
-      <div class="stat reveal"><div class="n"><span data-count="1">1</span></div><p>Person to deal with</p></div>
     </div>
   </div>
 </section>
@@ -411,20 +431,39 @@ section{padding:100px 0;position:relative}
   </div>
 </section>
 
+
+<!-- RECENT JOBS -->
+<section id="jobs" class="band-bone">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Recent jobs</span><h2 class="reveal">Straight off the Google listing</h2></div>
+      <p class="muted reveal">Photos from the Custom Renovation Limited Google profile, including one a customer posted with her review.</p>
+    </div>
+    <div class="jobs-grid">
+      <figure class="reveal"><img src="img/hero-kitchen-1920.webp" srcset="img/hero-kitchen-1080.webp 1080w, img/hero-kitchen-1920.webp 1920w" sizes="(max-width:600px) 100vw, (max-width:980px) 50vw, 33vw" alt="Kitchen with a timber benchtop and white cabinets" width="1920" height="1440" loading="lazy"><figcaption>Kitchen and benchtop</figcaption></figure>
+      <a class="jobs-more reveal" href="tel:+64223762541"><strong>Got a job like these?</strong><span>Call 022 376 2541</span></a>
+      <figure class="reveal"><img src="img/job-deck-1920.webp" srcset="img/job-deck-1080.webp 810w, img/job-deck-1920.webp 1440w" sizes="(max-width:600px) 100vw, (max-width:980px) 50vw, 33vw" alt="New timber deck and steps with a lattice screen" width="1440" height="1920" loading="lazy"><figcaption>Deck and steps</figcaption></figure>
+      <figure class="reveal"><img src="img/job-shower-1920.webp" srcset="img/job-shower-1080.webp 810w, img/job-shower-1920.webp 1440w" sizes="(max-width:600px) 100vw, (max-width:980px) 50vw, 33vw" alt="Glass shower enclosure, from a customer review photo" width="1440" height="1920" loading="lazy"><figcaption>Shower, customer photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <!-- 7. REVIEWS -->
 <section id="reviews" class="band-dark">
   <div class="wrap">
     <div class="section-head">
-      <div><span class="eyebrow reveal">Google reviews</span><h2 class="reveal">What Stratford customers say</h2></div>
-      <p class="muted reveal">Real reviews from the Custom Renovation Limited Google listing, rated 5.0 stars.</p>
+      <div><span class="eyebrow reveal">Google reviews</span><h2 class="reveal">What his customers say</h2></div>
+      <p class="muted reveal">Real reviews from the Custom Renovation Limited Google listing: 7 reviews, all five stars.</p>
     </div>
     <div class="reviews-grid">
-      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Excellent workmanship, communication and price. Painted roof, interior painting, refurbished Rimu bench tops, replaced deck roof and gave great honest advice. Completed job in a great time frame, turned up every day, no mucking around. Highly recommended."</p><footer><strong>HeARTfelt Bernice</strong>Google review</footer></article>
-      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Umesh has built us a retaining wall and replaced our garage roof and also painted our house and garage roofs. He has a great work ethic and his workmanship is second to none. I highly recommend him for any job he undertakes and give him 5 stars."</p><footer><strong>Vicki Nicol</strong>Google review</footer></article>
-      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Very Highly Recommended. Did a great job and didn't muck us around. Very reasonable price. Painted the roof. Replaced an old Clearlite roof with a new one. Did weatherboard repairs and exterior painting ... They just know what they're doing, are good at it and it doesn't take forever to get the job done."</p><footer><strong>Ian Mitchell</strong>Google review</footer></article>
-      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Great experience with this painter and all round home handyman. Solid work on plastering, skirting, and interior painting ... Umesh is reliable and easy to work with, I highly recommend him for a straightforward, positive experience."</p><footer><strong>John H</strong>Google review</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Excellent workmanship, communication and price. Painted roof, interior painting, refurbished Rimu bench tops, replaced deck roof and gave great honest advice. Completed job in a great time frame, turned up every day, no mucking around. Highly recommended. I've seen other jobs Umesh has done, new kitchen and bathroom, concrete benchtops, installing ranch slider, building decks, laying vinyl and carpet. There seems to be nothing this man can't do and he takes pride in his workmanship and tidyness."</p><footer><strong>HeARTfelt Bernice</strong>Google review, 2 years ago</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Umesh has built us a retaining wall and replaced our garage roof and also painted our house and garage roofs. He has a great work ethic and his workmanship is second to none. I highly recommend him for any job he undertakes and give him 5 stars"</p><footer><strong>Vicki Nicol</strong>Google review, 2 years ago</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Very Highly Recommended. Did a great job and didn't muck us around. Very reasonable price. Painted the roof. Replaced an old Clearlite roof with a new one. Did weatherboard repairs and exterior painting. Did interior painting and varnishing. Worked on the shower. They just know what they're doing, are good at it and it doesn't take forever to get the job done. You really can't ask for more than that."</p><footer><strong>Ian Mitchell</strong>Google review, 2 years ago</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Great experience with this painter and all round home handyman. Solid work on plastering, skirting, and interior painting ... Umesh is reliable and easy to work with, I highly recommend him for a straightforward, positive experience."</p><footer><strong>John H</strong>Google review, 2 years ago</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"I was very pleased with the work, work was professionally done and did not take long. I was consulted the whole time. I couldn't be happier"</p><footer><strong>Sandra Heal</strong>Google review, 2 years ago</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Hard working and super nice guy! Umeshwar's amazing variety of skills with his always happy to help attitude makes the renovation process simple and stress free."</p><footer><strong>Ryk Ferguson</strong>Google review, 2 years ago</footer></article>
     </div>
-    <div class="center reveal"><a class="btn btn-ghost" href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener">See all our Google reviews <svg class="icon"><use href="#i-arrow"/></svg></a><small>Excerpts marked with ... are shortened.</small></div>
+    <div class="center reveal"><a class="btn btn-ghost" href="https://search.google.com/local/reviews?placeid=ChIJg3way4gHFW0R9K-MMTLPQ6g" target="_blank" rel="noopener">See all 7 Google reviews <svg class="icon"><use href="#i-arrow"/></svg></a><small>Excerpts marked with ... are shortened.</small></div>
   </div>
 </section>
 
@@ -432,7 +471,7 @@ section{padding:100px 0;position:relative}
 <section class="review-banner" aria-label="Leave a review">
   <div class="wrap">
     <div><h2>Happy with our work? Leave us a review</h2><p>It helps other Taranaki homeowners find a builder they can trust.</p></div>
-    <a class="btn" href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener">Review us on Google</a>
+    <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJg3way4gHFW0R9K-MMTLPQ6g" target="_blank" rel="noopener">Review us on Google</a>
   </div>
 </section>
 
@@ -489,7 +528,7 @@ section{padding:100px 0;position:relative}
     <div class="footer-links">
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
-      <a href="https://www.google.com/maps?cid=12124762436298125300" target="_blank" rel="noopener">Leave a review</a>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJg3way4gHFW0R9K-MMTLPQ6g" target="_blank" rel="noopener">Leave a review</a>
     </div>
     <div class="socials">
       <a href="https://www.facebook.com/search/top?q=Custom%20Renovation%20Limited%20Stratford" target="_blank" rel="noopener" aria-label="Search Facebook for Custom Renovation Limited"><svg><use href="#i-fb"/></svg></a>
